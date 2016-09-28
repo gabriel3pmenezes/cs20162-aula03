@@ -8,7 +8,7 @@ public class Teste19 {
 
     @Test(expected = IllegalArgumentException.class)
     public void numMenorQueValido() {
-        MVNExe19.Horner(-3, 2, 3, 4);
+        MVNExe19.Horner(3, -2, 3, 4);
     }
 
 
