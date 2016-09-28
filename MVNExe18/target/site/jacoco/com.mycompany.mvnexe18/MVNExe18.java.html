@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MVNExe18.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">MVNExe18</a> &gt; <a href="index.source.html" class="el_package">com.mycompany.mvnexe18</a> &gt; <span class="el_source">MVNExe18.java</span></div><h1>MVNExe18.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.mvnexe18;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Gabriel
+ */
+<span class="nc" id="L14">public class MVNExe18 {</span>
+
+    public static int Raiz(int n, int i){
+        
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        if (n &lt; 0){</span>
+<span class="fc" id="L19">            throw new IllegalArgumentException(&quot;Número(s) fora da faixa&quot;);</span>
+        }
+        
+<span class="fc" id="L22">        int r = 1;</span>
+        
+<span class="fc bfc" id="L24" title="All 2 branches covered.">        while(0 &lt;= i){</span>
+<span class="fc" id="L25">            r = (r + (n / r))/2;</span>
+<span class="fc" id="L26">            i = i - 1;</span>
+        }
+        
+<span class="fc" id="L29">        return r;</span>
+    }
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        int n;
+        int i;
+        int resultado;
+<span class="nc" id="L37">        Scanner leitor = new Scanner(System.in);</span>
+        
+<span class="nc" id="L39">        System.out.println(&quot;Insira o valor de n: &quot;);</span>
+        
+<span class="nc" id="L41">        n = Integer.parseInt(leitor.nextLine());</span>
+        
+<span class="nc" id="L43">        System.out.println(&quot;Insira o valor de i: &quot;);</span>
+        
+<span class="nc" id="L45">        i = Integer.parseInt(leitor.nextLine());</span>
+        
+<span class="nc" id="L47">        resultado = Raiz(n, i);</span>
+        
+<span class="nc" id="L49">        System.out.println(&quot;O resultado é: &quot; + resultado);</span>
+<span class="nc" id="L50">    }</span>
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

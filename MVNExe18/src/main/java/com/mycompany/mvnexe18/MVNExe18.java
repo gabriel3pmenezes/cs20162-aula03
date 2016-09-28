@@ -21,7 +21,7 @@ public class MVNExe18 {
         
         int r = 1;
         
-        while(0 <= 1){
+        while(0 <= i){
             r = (r + (n / r))/2;
             i = i - 1;
         }
