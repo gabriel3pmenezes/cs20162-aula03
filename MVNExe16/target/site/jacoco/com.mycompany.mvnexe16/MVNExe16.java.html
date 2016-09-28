@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MVNExe16.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">MVNExe16</a> &gt; <a href="index.source.html" class="el_package">com.mycompany.mvnexe16</a> &gt; <span class="el_source">MVNExe16.java</span></div><h1>MVNExe16.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.mvnexe16;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Gabriel
+ */
+<span class="nc" id="L14">public class MVNExe16 {</span>
+
+    public static boolean QuadradoPerfeito(int k){
+        
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        if (k &lt; 1){</span>
+<span class="fc" id="L19">            throw new IllegalArgumentException(&quot;Número(s) fora da faixa&quot;);</span>
+        }
+        
+<span class="fc" id="L22">        int i = 1;</span>
+<span class="fc" id="L23">        int q = 1;</span>
+        
+<span class="fc bfc" id="L25" title="All 2 branches covered.">        while(q &lt; k){</span>
+<span class="fc" id="L26">            i = i + 2;</span>
+<span class="fc" id="L27">            q = q + 1;</span>
+        }
+        
+<span class="pc bpc" id="L30" title="1 of 2 branches missed.">        if(q == k){</span>
+<span class="fc" id="L31">            return true;</span>
+        }
+        else {
+<span class="nc" id="L34">            return false;</span>
+        }
+       
+    }
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        int k;
+        boolean resultado;
+<span class="nc" id="L43">        Scanner leitor = new Scanner(System.in);</span>
+        
+<span class="nc" id="L45">        System.out.println(&quot;Insira o valor de k: &quot;);</span>
+        
+<span class="nc" id="L47">        k = Integer.parseInt(leitor.nextLine());</span>
+        
+<span class="nc" id="L49">        resultado = QuadradoPerfeito(k);</span>
+        
+<span class="nc" id="L51">        System.out.println(&quot;O resultado é: &quot; + resultado);</span>
+        
+<span class="nc" id="L53">    }</span>
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>
