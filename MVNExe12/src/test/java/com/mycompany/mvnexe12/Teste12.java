@@ -15,7 +15,7 @@ public class Teste12 {
 
     @Test
     public void umNumeroArbitrarioCorreto() {
-        assertEquals(2.6666665, MVNExe12.Pi(3));
+        assertEquals(3.46, MVNExe12.Pi(3), 0.01);
     }
 
     
