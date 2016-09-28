@@ -6,8 +6,6 @@ import static org.junit.Assert.*;
 
 public class Teste20 {
 
-   
-
     @Test(expected = IllegalArgumentException.class)
     public void numMenorqueValido() {
         MVNExe20.Fibonacci(-4);
@@ -17,7 +15,5 @@ public class Teste20 {
     public void umNumeroArbitrarioCorreto() {
         assertEquals(3, MVNExe20.Fibonacci(4));
     }
-
-   
 
 }
