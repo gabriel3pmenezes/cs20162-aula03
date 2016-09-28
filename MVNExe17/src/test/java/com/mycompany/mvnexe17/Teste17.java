@@ -8,8 +8,13 @@ public class Teste17{
 
    
     @Test(expected = IllegalArgumentException.class)
-    public void numMenorqueValido() {
-        MVNExe17.Mod(-4, -3);
+    public void numMenorqueValido1() {
+        MVNExe17.Mod(-4, 3);
+    }
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void numMenorqueValido2() {
+        MVNExe17.Mod(4, -3);
     }
 
     @Test
