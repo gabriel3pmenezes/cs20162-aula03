@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MVNExe11.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">MVNExe11</a> &gt; <a href="index.source.html" class="el_package">com.mycompany.mvnexe11</a> &gt; <span class="el_source">MVNExe11.java</span></div><h1>MVNExe11.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.mvnexe11;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Gabriel
+ */
+<span class="nc" id="L14">public class MVNExe11 {</span>
+
+    public static float SomaNaturais(float n){
+        
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        if (n &lt; 1){</span>
+<span class="fc" id="L19">            throw new IllegalArgumentException(&quot;Número fora da faixa&quot;);</span>
+        }
+        
+<span class="fc" id="L22">        float i = 1;</span>
+<span class="fc" id="L23">        float s = 0;</span>
+        float d;
+        
+<span class="fc bfc" id="L26" title="All 2 branches covered.">        while (i &lt;= n){</span>
+<span class="fc" id="L27">            d = 1 + (i*i);</span>
+<span class="fc" id="L28">            s = s + (1/d);</span>
+<span class="fc" id="L29">            i = i+ i;</span>
+        }
+        
+<span class="fc" id="L32">        return s;</span>
+        
+    }
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        float n;
+        float resultado;
+<span class="nc" id="L40">        Scanner leitor = new Scanner(System.in);</span>
+        
+<span class="nc" id="L42">        System.out.println(&quot;Insira o valor de n: &quot;);</span>
+        
+<span class="nc" id="L44">        n = Integer.parseInt(leitor.nextLine());</span>
+        
+<span class="nc" id="L46">        resultado = SomaNaturais(n);</span>
+        
+<span class="nc" id="L48">        System.out.println(&quot;O resultado é: &quot; + resultado);</span>
+<span class="nc" id="L49">    }</span>
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

@@ -15,7 +15,7 @@ public class Teste11 {
 
     @Test
     public void umNumeroArbitrarioCorreto() {
-        assertEquals(0.7, MVNExe11.SomaNaturais(2));
+        assertEquals(0.7, MVNExe11.SomaNaturais(2),0.01);
     }
 
 }
